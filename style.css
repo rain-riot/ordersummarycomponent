@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+}
+
+.container {
+  width: 300px;
+  height: 450px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.container img {
+  width: 100%;
+  height: 36%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-content h1 {
+  font-size: 1.5em;
+  color: hsl(223, 47%, 23%);
+}
+
+.text-content p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  color: hsl(224, 23%, 55%);
+  max-width: 250px;
+  max-height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.annual-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 50px;
+  margin-top: 15px;
+  background-color: hsl(225, 100%, 97%);
+  border-radius: 10px;
+}
+
+.annual-plan img {
+  width: 40px;
+  height: 40px;
+}
+
+.annual-plan a {
+  margin-left: 70px;
+  font-size: 0.8em;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+}
+
+.annual-plan a:hover {
+  color: hsl(224, 23%, 55%);
+}
+
+.text-plan {
+  margin-left: 10px;
+}
+
+.text-plan h3 {
+  color: hsl(223, 47%, 23%);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.text-plan p {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.8em;
+}
+
+button {
+  margin-top: 20px;
+  color: hsl(225, 100%, 98%);
+  width: 200px;
+  height: 40px;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 6px 5px 0px rgba(114, 128, 167, 0.59);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(114, 128, 167, 0.59);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(114, 128, 167, 0.59);
+}
+
+button a {
+  text-decoration: none;
+  color: hsl(225, 100%, 98%);
+}
+
+button:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-order {
+  margin-top: 15px;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel-order:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
