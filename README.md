@@ -41,12 +41,22 @@ Users should be able to:
 Box sizing, responsive page.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="text-content">
+  <h1>Order Summary</h1>
+  <p>
+    You can now listen to millions of songs, audiobooks, and podcast on any
+    device anywhere you like.
+  </p>
+</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 ```
 
